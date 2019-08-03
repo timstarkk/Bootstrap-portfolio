@@ -2,52 +2,71 @@
 <html lang="en">
 
 <head>
-    <title>-- Tim Stark --</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .row {
+            border: 2px solid red;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .row>div {
+            border: 2px solid green;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .container>div {
+            border: 2px solid blue;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
-<body id="container">
-    <div id="content-wrap">
-        <header>
-            <section id="navbar" class="clearfix">
-
-                <h1 id="name">Tim Stark</h1>
-
-                <nav>
-
-                    <a class="link" href="index.html">About</a><span
-                        class="vl">&#160;&#160;&#160;|&#160;&#160;&#160;</span>
-                    <a class="link" href="portfolio.html">Portfolio</a><span
-                        class="vl">&#160;&#160;&#160;|&#160;&#160;&#160;</span>
-                    <a class="link" href=" ">Contact</a>
-
-                </nav>
-
-            </section>
-        </header>
-        <main class="clearfix">
-            <section id="contactline">
-                <h1 id="about">Contact</h1>
-            </section>
-
-            <!-- insert forms here  -->
-            <form action="mailto:timstarkk@gmail.com" method="post" enctype="text/plain">
-                <p id="contactwords">Name</p>
-                <input id="input" type="text" name="name" placeholder="John Smith">
-                <p id="contactwords">Email</p>
-                <input id="input" type="text" name="email" placeholder="example@gmail.com">
-                <p id="contactwords">Message</p>
-                <textarea id="messageinput" name="message" type="text"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </main>
+<body class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light offset-md-1 col-md-10">
+            <a class="navbar-brand offset-md-1" href="#">
+                <h2>Tim Stark</h2>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav offset-md-9">
+                    <a class="nav-item nav-link" href="index.html">About</a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link active" href="#">Contact<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
     </div>
-
-    <footer>
-        <p id="copyright">Copyright ©</p>
-    </footer>
-
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>About Me</h3>
+                </div>
+                <div class="col-md-3">
+                    This column will contain the image
+                </div>
+                <div class="col-md-9">
+                    This column will contain the paragraph
+                </div>
+                <div class="col-md-12">
+                    This column will contain the rest of the paragraph
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            This column has an offset of 1 and occupies 10 columns
+        </div>
+    </div>
 </body>
 
 </html>
