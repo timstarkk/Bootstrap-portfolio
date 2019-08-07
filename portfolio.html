@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Document</title>
     <style>
-        .row {
+        /* .row {
             border: 2px solid red;
             margin-top: 5px;
             margin-bottom: 5px;
@@ -21,52 +22,87 @@
             margin-bottom: 5px;
         }
 
+        .row>nav {
+            border: 2px solid green;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
         .container>div {
             border: 2px solid blue;
             margin-top: 5px;
             margin-bottom: 5px;
-        }
+        } */
     </style>
 </head>
 
 <body class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light offset-md-1 col-md-10">
-            <a class="navbar-brand offset-md-1" href="#">
-                <h2>Tim Stark</h2>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav offset-md-9">
-                    <a class="nav-item nav-link" href="index.html">About</a>
-                    <a class="nav-item nav-link active" href="#">Portfolio<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+    <div id="topBar" class="row">
+        <nav id="navContainer" class="container">
+            <div class="row">
+                <div class="nameDiv col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 center">
+                    <h2 id="name">Tim Stark</h2>
                 </div>
+                <nav
+                    class="centerLinks col-12 col-sm-12 offset-md-2 col-md-5 offset-lg-4 col-lg-5 offset-xl-4 col-xl-5">
+
+                    <a class="link" href="index.html">About</a>
+                    <span class="vl">&#160;&#160;&#160;|&#160;&#160;&#160;</span>
+                    <a class="link" href="">Portfolio</a>
+                    <span class="vl">&#160;&#160;&#160;|&#160;&#160;&#160;</span>
+                    <a class="link" href="contact.html">Contact</a>
+
+                </nav>
             </div>
         </nav>
     </div>
     <div class="row">
-        <div class="container">
+        <div id="mainSection" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Portfolio</h3>
+                    <h3 class="aboutMeLine" id="about">About Me</h3>
                 </div>
-                <div class="col-md-3">
-                    This column will contain the image
-                </div>
-                <div class="col-md-9">
-                    This column will contain the paragraph
-                </div>
-                <div class="col-md-12">
-                    This column will contain the rest of the paragraph
+                <div class="col-md-12 col-lg-12">
+                    <div id="pictureDiv" class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                        <img class="col-md-12" id="picture" src="assets/images/tim.jpg" alt="Tim and Sabryna">
+                    </div>
+                    <p class="paragraph">
+                        My name is Tim Stark. I am from Baytown, Texas, a chemical plant/refinery town just east of
+                        Houston.
+                        As a kid, I always enjoyed drawing, and playing video games. When I was a kid, and someone asked
+                        what I wanted to do when I got older,
+                        I always told them I wanted to be a game designer. Not knowing what that entailed.
+                    </p>
+                    <p class="paragraph">
+                        As I got older, I kept gaming, and that kept me interested in technology, (building my own PC,
+                        etc.)
+                        I also got into music, playing guitar and drums in high school
+                        and after that I taught myself how to produce rap beats. I also began teaching myself how to
+                        code. I
+                        have some pretty big dreams for life, but have been sort of all over the place, not picking one
+                        skill to master. As a lyft driver,
+                        I fell into conversation with a developer for Indeed who encouraged me to pick one skill, and
+                        dive
+                        in head first.
+                    </p>
+                    <p class="paragraph">
+                        About two months ago, I found out my girlfriend is pregnant. (Her name is Sabryna, she is in the
+                        picture with me above.)
+                        When I heard the news, and thought about my next moves, the words of the Indeed developer came
+                        to my
+                        mind. In order to accelerate my career, and increase my finances in preparation for my first
+                        child,
+                        I have enrolled in this boot camp so that I can secure a job as a developer.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <footer class="row">
         <div class="col-md-10 offset-md-1">
-            This column has an offset of 1 and occupies 10 columns
+            <p id="copyright">copyright ©</p>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
