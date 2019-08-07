@@ -147,3 +147,69 @@ footer {
 	top: 20px;
 	margin-bottom: 0px;
 }
+
+/* PORTFOLIO STYLING BELOW HERE ------------------------------------------------------------ */
+
+#portfolioRow {
+	display: flex;
+	justify-content: center;
+}
+
+.first {
+}
+
+.container2 {
+	max-height: 210px;
+	position: relative;
+	width: 100%;
+	max-width: 275px;
+	display: inline-block;
+	margin: 5px 0px 5px 15px;
+	overflow: auto;
+}
+
+.container2 img {
+	width: 100%;
+	height: auto;
+}
+
+.container2 .btn {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	position: absolute;
+	width: 100%;
+	top: 82%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background: #4faaa5;
+	color: white;
+	font-size: 20px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.container2 .btn:hover {
+	background: #47c7c0;
+}
+
+.container2 .btn:active {
+	background: #8fded9;
+}
+
+.last {
+	margin-bottom: 20px;
+}
+
+#hidden {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 32px;
+	color: #777777;
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+	padding-bottom: 0px;
+	height: 0px;
+	margin: 0px;
+}

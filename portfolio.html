@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Document</title>
     <style>
         /* .row {
@@ -34,6 +33,8 @@
             margin-bottom: 5px;
         } */
     </style>
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body class="container-fluid">
@@ -60,43 +61,40 @@
         <div id="mainSection" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="aboutMeLine" id="about">About Me</h3>
+                    <h3 class="aboutMeLine" id="about">Portfolio</h3>
                 </div>
-                <div class="col-md-12 col-lg-12">
-                    <div id="pictureDiv" class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img class="col-md-12" id="picture" src="assets/images/tim.jpg" alt="Tim and Sabryna">
+                <div class="projectsContainer container">
+                    <div class="row" id="portfolioRow">
+                        <h1 id="hidden">Click on a banner to view project.</h1>
+                        <div class="container2">
+                            <img class="portimage first" src="assets/images/backgen.png" alt="background generator">
+                            <button class="btn"
+                                onclick="window.location.href = 'https://timstarkk.github.io/Background-Generator';">Background
+                                Generator</button>
+                        </div>
+                        <div class="container2 ">
+                            <img class="portimage spacer" src="assets/images/todolist.png" alt="to do list">
+                            <button class="btn"
+                                onclick="window.location.href = 'https://timstarkk.github.io/To-Do-List';">To-Do
+                                List</button>
+                        </div>
+                        <div class="container2 ">
+                            <img class="portimage spacer" src="assets/images/ai.png" alt="board">
+                            <button class="btn">A.I.</button>
+                        </div>
+                        <div class="container2 ">
+                            <img class="portimage spacer" src="assets/images/mmo.png" alt="nightlife">
+                            <button class="btn">MMORPG</button>
+                        </div>
+                        <div class="container2 last">
+                            <img class="portimage spacer" src="assets/images/daw.png" alt="shore">
+                            <button class="btn">D.A.W.</button>
+                        </div>
                     </div>
-                    <p class="paragraph">
-                        My name is Tim Stark. I am from Baytown, Texas, a chemical plant/refinery town just east of
-                        Houston.
-                        As a kid, I always enjoyed drawing, and playing video games. When I was a kid, and someone asked
-                        what I wanted to do when I got older,
-                        I always told them I wanted to be a game designer. Not knowing what that entailed.
-                    </p>
-                    <p class="paragraph">
-                        As I got older, I kept gaming, and that kept me interested in technology, (building my own PC,
-                        etc.)
-                        I also got into music, playing guitar and drums in high school
-                        and after that I taught myself how to produce rap beats. I also began teaching myself how to
-                        code. I
-                        have some pretty big dreams for life, but have been sort of all over the place, not picking one
-                        skill to master. As a lyft driver,
-                        I fell into conversation with a developer for Indeed who encouraged me to pick one skill, and
-                        dive
-                        in head first.
-                    </p>
-                    <p class="paragraph">
-                        About two months ago, I found out my girlfriend is pregnant. (Her name is Sabryna, she is in the
-                        picture with me above.)
-                        When I heard the news, and thought about my next moves, the words of the Indeed developer came
-                        to my
-                        mind. In order to accelerate my career, and increase my finances in preparation for my first
-                        child,
-                        I have enrolled in this boot camp so that I can secure a job as a developer.
-                    </p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer class="row">
         <div class="col-md-10 offset-md-1">
