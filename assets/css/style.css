@@ -112,6 +112,7 @@ a:active {
 #picture {
     position: relative;
 	max-width: 220px;
+	max-height: 220px;
 	padding: 0px;
 	margin-left: auto;
 	margin-right: auto;
