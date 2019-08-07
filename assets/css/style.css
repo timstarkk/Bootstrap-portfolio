@@ -91,8 +91,8 @@ a:active {
 
 .aboutMeLine {
 	border-bottom: 3px solid gainsboro;
-	padding: 20px 0px 20px 0px;
-	margin-bottom: 15px;
+	padding: 30px 0px 20px 0px;
+	margin-bottom: 30px;
 }
 
 #about {
@@ -134,7 +134,6 @@ footer {
 	color: white;
 	text-align: center;
 	border-top: 8px solid #4faaa5;
-	position: relative;
 	bottom: 0px;
 	height: 3.8em;
 }
@@ -144,7 +143,7 @@ footer {
 	color: lightgray;
 	font-size: 12px;
 	position: relative;
-	top: 20px;
+	top: 25px;
 	margin-bottom: 0px;
 }
 
@@ -161,7 +160,7 @@ footer {
 	width: 100%;
 	max-width: 275px;
 	display: inline-block;
-	margin: 5px 0px 5px 15px;
+	margin: 5px 15px 15px 0px;
 	overflow: auto;
 }
 
@@ -196,17 +195,102 @@ footer {
 }
 
 .last {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
-#hidden {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 32px;
-	color: #777777;
+/* CONTACT PAGE STYLING BELOW HERE --------------------------------------------------------------------- */
+
+#formDiv {
+	/* border: 2px solid purple; */
 	width: 100%;
-	text-align: center;
-	visibility: hidden;
-	padding-bottom: 0px;
-	height: 0px;
+}
+
+#contactwords {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777777;
+	max-width: 97%;
+	position: relative;
+	left: 12px;
+	padding: 0px;
 	margin: 0px;
+	line-height: 2rem;
+}
+
+#input {
+	font-size: 16px;
+	width: 97%;
+	position: relative;
+	left: 12px;
+	padding: 5px 0px 5px 10px;
+	margin-bottom: 10px;
+	border: 1px solid gainsboro;
+}
+
+#messageinput {
+	font-size: 16px;
+	width: 97%;
+	max-width: 97%;
+	height: 200px;
+	position: relative;
+	left: 12px;
+	padding-bottom: 0px;
+	margin-bottom: 17px;
+	overflow: auto;
+	resize: both;
+	border: 1px solid gainsboro;
+}
+
+#input[type="button"],
+[type=submit] {
+	background: #4faaa5;
+	color: white;
+	font-size: 18px;
+	height: 40px;
+	width: 120px;
+	position: relative;
+	border: none;
+	left: 30px;
+	padding-bottom: 10px;
+	padding-top: 6px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+#input[type="button"],
+[type=submit]:hover {
+	background: #47c7c0;
+}
+
+#input[type="button"],
+[type=submit]:active {
+	background: #8fded9;
+}
+
+
+/* IPAD MEDIA QUERY TO FIX FOOTER POSITION ----------------------------------------------------------- */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	
+	footer {
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+	}
+}
+
+
+/* IPHONE MEDIA QUERY TO FIX LINK POSITION --------------------------------------------------------------- */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	.centerLinks {
+		padding-left: 40px;
+	}
 }

@@ -60,40 +60,18 @@
         <div id="mainSection" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="aboutMeLine" id="about">About Me</h3>
+                    <h3 class="aboutMeLine" id="about">Contact</h3>
                 </div>
-                <div class="col-md-12 col-lg-12">
-                    <div id="pictureDiv" class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                        <img class="col-md-12" id="picture" src="assets/images/tim.jpg" alt="Tim and Sabryna">
-                    </div>
-                    <p class="paragraph">
-                        My name is Tim Stark. I am from Baytown, Texas, a chemical plant/refinery town just east of
-                        Houston.
-                        As a kid, I always enjoyed drawing, and playing video games. When I was a kid, and someone asked
-                        what I wanted to do when I got older,
-                        I always told them I wanted to be a game designer. Not knowing what that entailed.
-                    </p>
-                    <p class="paragraph">
-                        As I got older, I kept gaming, and that kept me interested in technology, (building my own PC,
-                        etc.)
-                        I also got into music, playing guitar and drums in high school
-                        and after that I taught myself how to produce rap beats. I also began teaching myself how to
-                        code. I
-                        have some pretty big dreams for life, but have been sort of all over the place, not picking one
-                        skill to master. As a lyft driver,
-                        I fell into conversation with a developer for Indeed who encouraged me to pick one skill, and
-                        dive
-                        in head first.
-                    </p>
-                    <p class="paragraph">
-                        About two months ago, I found out my girlfriend is pregnant. (Her name is Sabryna, she is in the
-                        picture with me above.)
-                        When I heard the news, and thought about my next moves, the words of the Indeed developer came
-                        to my
-                        mind. In order to accelerate my career, and increase my finances in preparation for my first
-                        child,
-                        I have enrolled in this boot camp so that I can secure a job as a developer.
-                    </p>
+                <div id="formDiv">
+                    <form action="mailto:timstarkk@gmail.com" method="post" enctype="text/plain">
+                        <p id="contactwords">Name</p>
+                        <input id="input" type="text" name="name" placeholder="John Smith">
+                        <p id="contactwords">Email</p>
+                        <input id="input" type="text" name="email" placeholder="example@gmail.com">
+                        <p id="contactwords">Message</p>
+                        <textarea id="messageinput" name="message" type="text"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>
