@@ -234,6 +234,7 @@ footer {
 	height: 200px;
 	position: relative;
 	left: 12px;
+	padding-left: 10px;
 	padding-bottom: 0px;
 	margin-bottom: 17px;
 	overflow: auto;
