@@ -110,8 +110,10 @@ a:active {
 }
 
 #picture {
-    position: relative;
+	position: relative;
+	width: 220px;
 	max-width: 220px;
+	min-width: 220px;
 	height: 220px;
 	max-height: 220px;
 	padding: 0px;
